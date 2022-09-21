@@ -48,9 +48,9 @@ def generate_keywords(prompt: str) -> List[str]:
     keywords_text = keywords_text.strip()
     keywords_array = re.split(",|\n|;|-", keywords_text)
     # remove empty strings
-    keywords_array = [keyword.lower().strip() for keyword in keywords_array]
+    keywords_array = [k.lower().strip() for k in keywords_array]
     # whitespace
-    keywords_array = [keyword for keyword in keywords_array if len(keyword) > 0]
+    keywords_array = [k for k in keywords_array if len(k) > 0]
     # remove anything that's empty
     
     print(f"Keywords: {keywords_array}")
@@ -68,7 +68,7 @@ def generate_branding_snippet(prompt: str) -> str:
     )
 
     # Extract Output Text from Response for the Branding Snippet
-    branding_text = response["choices"][0]["text"]
+    branding_text: str = response["choices"][0]["text"]
     
     # remove the leading whitespace
     branding_text = branding_text.strip()
