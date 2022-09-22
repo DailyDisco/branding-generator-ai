@@ -1,7 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from description import generate_branding_snippet, generate_keywords
+from mangum import Mangum
 
 app = FastAPI()
+
+# this wraps the api app in a handler function
+handler = Mangum(app)
 
 MAX_INPUT_LENGTH = 32
 

@@ -1,6 +1,5 @@
 import os
 from typing import List
-from urllib import response
 import openai
 import argparse # if __name__ == "__main__": let's us run the script from the command line
 from dotenv import load_dotenv
