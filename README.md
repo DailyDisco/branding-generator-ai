@@ -1,6 +1,6 @@
 # branding-generator-ai 
 
-Link to demo: https://branding-generator-ai-description-ai-frontend-site-varh.vercel.app/
+Link to demo: https://ai-branding-generator.vercel.app/
 
 ## What is this?
 
@@ -32,6 +32,12 @@ AWS Lambda: https://aws.amazon.com/lambda/
 ## How to deploy
 
 ## Other Notes
+
+## To Dos
+
+<ul>
+    <li>Integrate Next OAuth</li>
+</ul>
 
 AWS stack is a logical grouping of AWS resources. (e.g. Lambda, API Gateway, S3, etc.)
 
