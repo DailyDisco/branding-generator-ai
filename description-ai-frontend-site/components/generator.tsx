@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Form from "./form";
 import Results from "./results";
+import Image from "next/image";
+import Logo from '../public/logo.svg';
 
 const Generator: React.FC = () => {
 
@@ -45,11 +47,23 @@ const Generator: React.FC = () => {
         displayedElement = <Form prompt={prompt} setPrompt={setPrompt} onSubmit={onSubmit} isLoading={isLoading} characterLimit={CHARACTER_LIMIT}/>        
     }
 
+    // this makes the texts white and transparent and clips it to the shape of the image
+    const gradientTextStyle =
+    "text-white text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 font-light w-fit mx-auto";
+
     return (
-        <>
-            <h1>Welcome to the AI Branding Description Generator!</h1>
-            {displayedElement}
-        </>
+        <div className="h-screen flex">
+            <div className="max-w-md m-auto p-2">
+                <div className="bg-gray-700 p-6 rounded-md text-white">
+                    <div className="text-center my-6">
+                        <Image src={Logo} width={32} height={32} alt='logo'/>
+                        <h1 className={gradientTextStyle + "text-3xl font-light w-fit mx-auto"}>Welcome to the AI Branding Description assistant!</h1>
+                        <div className={gradientTextStyle}>Words for when you can't find them</div>
+                    </div>
+                    {displayedElement}
+                </div>
+            </div>
+        </div>
     )
 }
 
