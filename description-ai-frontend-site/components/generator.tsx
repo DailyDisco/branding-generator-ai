@@ -58,7 +58,7 @@ const Generator: React.FC = () => {
                     <div className="text-center my-6">
                         <Image src={Logo} width={32} height={32} alt='logo'/>
                         <h1 className={gradientTextStyle + "text-3xl font-light w-fit mx-auto"}>Welcome to the AI Branding Description assistant!</h1>
-                        <div className={gradientTextStyle}>Words for when you can't find them</div>
+                        <div className={gradientTextStyle}>Generate words with low effort</div>
                     </div>
                     {displayedElement}
                 </div>
