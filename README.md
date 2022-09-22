@@ -1,5 +1,7 @@
 # branding-generator-ai 
 
+Link to demo: https://branding-generator-ai-description-ai-frontend-site-varh.vercel.app/
+
 ## What is this?
 
 This branding-generator-ai is used to generate descriptions for products or services that someone may be selling. The descriptions can easily be tweaked to be longer, or shorter, and can also be modified for generating other types of text.
