@@ -63,7 +63,7 @@ def generate_branding_snippet(prompt: str) -> str:
     enriched_prompt = f"Generate upbeat descriptions for {prompt}: "
     print(enriched_prompt) # for debugging
     response = openai.Completion.create(
-        engine = "davinci-instruct-beta-v3", prompt = enriched_prompt, max_tokens=32
+        engine = "davinci-instruct-beta-v3", prompt = enriched_prompt, max_tokens=64
     )
 
     # Extract Output Text from Response for the Branding Snippet
