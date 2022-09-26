@@ -114,18 +114,19 @@ const Generator: React.FC = () => {
                     {user ? (
                     <div>
                         {displayedElement}
-                        <br />
-                        <button onClick={() => auth.signOut()}>
-                            <div className='bg-blue-600 text-white rounded-md p-2 w-48'>
-                            Sign Out with Google
-                            </div>
-                        </button>
+                        <div className="my-2">
+                            <button className='bg-blue-600 text-white rounded-md p-2 w-full' onClick={() => auth.signOut()}>
+                                <div>
+                                Sign Out with Google
+                                </div>
+                            </button>
+                        </div>
                     </div>
                     
                     ) : (
                         <div>
-                            <button onClick={signIn}>
-                                <div className='bg-blue-600 text-white rounded-md p-2 w-48'>
+                            <button className='bg-blue-600 text-white rounded-md p-2 w-full' onClick={signIn}>
+                                <div>
                                     Sign in with Google
                                 </div>
                             </button>
